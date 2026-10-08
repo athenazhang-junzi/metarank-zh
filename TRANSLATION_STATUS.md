@@ -38,9 +38,22 @@
 | 特征提取器 | [`doc/zh-CN/configuration/feature-extractors.md`](doc/zh-CN/configuration/feature-extractors.md) | 中文精编 |
 | 排序模型 | [`doc/zh-CN/configuration/supported-ranking-models.md`](doc/zh-CN/configuration/supported-ranking-models.md) | 中文精编 |
 
+## 第三阶段：详细特征与推荐模型
+
+| 内容 | 中文文件 | 状态 |
+|---|---|---|
+| 计数、窗口与比率 | [`doc/zh-CN/configuration/features/counters.md`](doc/zh-CN/configuration/features/counters.md) | 中文精编 |
+| 文本与神经匹配 | [`doc/zh-CN/configuration/features/text.md`](doc/zh-CN/configuration/features/text.md) | 中文精编 |
+| 上游相关性与位置 | [`doc/zh-CN/configuration/features/relevancy.md`](doc/zh-CN/configuration/features/relevancy.md) | 中文精编 |
+| 排序多样性 | [`doc/zh-CN/configuration/features/diversity.md`](doc/zh-CN/configuration/features/diversity.md) | 中文精编 |
+| 用户与会话特征 | [`doc/zh-CN/configuration/features/user-session.md`](doc/zh-CN/configuration/features/user-session.md) | 中文精编 |
+| 热门趋势推荐 | [`doc/zh-CN/configuration/recommendations/trending.md`](doc/zh-CN/configuration/recommendations/trending.md) | 中文精编 |
+| ALS 相似内容 | [`doc/zh-CN/configuration/recommendations/similar.md`](doc/zh-CN/configuration/recommendations/similar.md) | 中文精编 |
+| 语义相似推荐 | [`doc/zh-CN/configuration/recommendations/semantic.md`](doc/zh-CN/configuration/recommendations/semantic.md) | 中文精编 |
+
 ## 后续阶段
 
-后续依次覆盖各类特征的详细参数、推荐模型、数据源、持久化、部署、集成、生产运行和开发文档。未翻译页面可直接阅读 [`doc/`](doc/) 下的英文原文。
+后续依次覆盖通用数值与类别特征、日期时间特征、数据源、持久化、部署、集成、生产运行和开发文档。未翻译页面可直接阅读 [`doc/`](doc/) 下的英文原文。
 
 ## 发现问题
 

@@ -24,7 +24,23 @@
 候选内容 → /rank 重排 → 展示排序结果 → /feedback 回传 → 生成训练样本 → 重新训练模型
 ```
 
-中文核心参考已经覆盖事件、API、配置、特征和排序模型。各特征类型、部署与集成页面仍在后续阶段，未翻译部分请阅读对应[英文原文](../_toc.md)。
+中文核心参考已经覆盖事件、API、配置、排序模型和主要特征类型。部署与集成页面仍在后续阶段，未翻译部分请阅读对应[英文原文](../_toc.md)。
+
+### 详细特征与推荐模型
+
+特征：
+
+- [计数、窗口与比率](configuration/features/counters.md)
+- [文本与神经匹配](configuration/features/text.md)
+- [上游相关性与位置](configuration/features/relevancy.md)
+- [排序多样性](configuration/features/diversity.md)
+- [用户与会话特征](configuration/features/user-session.md)
+
+推荐模型：
+
+- [热门趋势推荐](configuration/recommendations/trending.md)
+- [ALS 相似内容](configuration/recommendations/similar.md)
+- [语义相似推荐](configuration/recommendations/semantic.md)
 
 ### 中文案例
 

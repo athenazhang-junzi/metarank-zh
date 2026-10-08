@@ -12,7 +12,16 @@
 - [JSON API](api.md)
 - [配置概览](configuration/overview.md)
   - [特征提取器](configuration/feature-extractors.md)
+    - [计数、窗口与比率](configuration/features/counters.md)
+    - [文本与神经匹配](configuration/features/text.md)
+    - [上游相关性与位置](configuration/features/relevancy.md)
+    - [排序多样性](configuration/features/diversity.md)
+    - [用户与会话特征](configuration/features/user-session.md)
   - [支持的排序模型](configuration/supported-ranking-models.md)
+  - 推荐模型
+    - [热门趋势推荐](configuration/recommendations/trending.md)
+    - [ALS 相似内容](configuration/recommendations/similar.md)
+    - [语义相似推荐](configuration/recommendations/semantic.md)
 
 ## 中文补充
 

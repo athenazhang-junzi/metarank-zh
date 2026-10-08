@@ -12,6 +12,7 @@
   <a href="https://docs.metarank.ai">官方文档</a> ·
   <a href="doc/zh-CN/README.md">中文文档</a> ·
   <a href="TRANSLATION_STATUS.md">翻译进度</a> ·
+  <a href="RELEASE_NOTES.zh-CN.md">中文版本说明</a> ·
   <a href="doc/zh-CN/glossary.md">术语表</a>
 </p>
 
@@ -44,11 +45,12 @@ Metarank 主要负责**候选集之后的排序与反馈闭环**。它不是一�
 | 配置特征和模型 | [配置概览](doc/zh-CN/configuration/overview.md) |
 | 深入计数、文本和多样性 | [详细特征文档](doc/zh-CN/README.md#详细特征与推荐模型) |
 | 配置热门、相似或语义推荐 | [推荐模型文档](doc/zh-CN/README.md#详细特征与推荐模型) |
+| 准备运行与部署 | [运行与部署文档](doc/zh-CN/README.md#运行与部署) |
 | 统一推荐系统术语 | [中英术语表](doc/zh-CN/glossary.md) |
 | 了解视频内容分发应用 | [Metarank × FlowLens 案例](doc/zh-CN/cases/video-distribution-flowlens.md) |
 | 查看翻译覆盖范围 | [翻译进度](TRANSLATION_STATUS.md) |
 
-完整英文文档仍保留在 [`doc/`](doc/) 目录中。中文文档位于 [`doc/zh-CN/`](doc/zh-CN/)，文件路径尽量与上游对应，方便比较和同步。当前中文参考已覆盖事件、API、配置、排序模型，以及计数、文本、相关性、多样性、用户会话和三类推荐模型。
+完整英文文档仍保留在 [`doc/`](doc/) 目录中。中文文档位于 [`doc/zh-CN/`](doc/zh-CN/)，文件路径尽量与上游对应，方便比较和同步。`zh-v0.1.0` 已覆盖入门、核心 API、主要特征、推荐模型、数据与状态、CLI、单机/Docker 部署和生产运行边界。
 
 ## 一分钟运行
 

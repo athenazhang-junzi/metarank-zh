@@ -20,7 +20,7 @@
 | 待翻译 | 当前只有英文上游文档 |
 | 中文原创 | 不是上游原文翻译，属于中文仓库新增内容 |
 
-## 第一阶段
+## 第一、二阶段：入门与核心参考
 
 | 内容 | 中文文件 | 状态 |
 |---|---|---|
@@ -51,9 +51,29 @@
 | ALS 相似内容 | [`doc/zh-CN/configuration/recommendations/similar.md`](doc/zh-CN/configuration/recommendations/similar.md) | 中文精编 |
 | 语义相似推荐 | [`doc/zh-CN/configuration/recommendations/semantic.md`](doc/zh-CN/configuration/recommendations/semantic.md) | 中文精编 |
 
-## 后续阶段
+## 发布收尾：`zh-v0.1.0`
 
-后续依次覆盖通用数值与类别特征、日期时间特征、数据源、持久化、部署、集成、生产运行和开发文档。未翻译页面可直接阅读 [`doc/`](doc/) 下的英文原文。
+| 内容 | 中文文件 | 状态 |
+|---|---|---|
+| 标量、向量与类别特征 | [`doc/zh-CN/configuration/features/scalar.md`](doc/zh-CN/configuration/features/scalar.md) | 中文精编 |
+| 通用派生特征 | [`doc/zh-CN/configuration/features/generic.md`](doc/zh-CN/configuration/features/generic.md) | 中文精编 |
+| 日期与时间特征 | [`doc/zh-CN/configuration/features/datetime.md`](doc/zh-CN/configuration/features/datetime.md) | 中文精编 |
+| 时间戳格式 | [`doc/zh-CN/timestamp-formats.md`](doc/zh-CN/timestamp-formats.md) | 中文精编 |
+| 数据源 | [`doc/zh-CN/configuration/data-sources.md`](doc/zh-CN/configuration/data-sources.md) | 中文精编 |
+| 状态持久化 | [`doc/zh-CN/configuration/persistence.md`](doc/zh-CN/configuration/persistence.md) | 中文精编 |
+| 点击模型 | [`doc/zh-CN/click-models.md`](doc/zh-CN/click-models.md) | 中文精编 |
+| CLI | [`doc/zh-CN/cli.md`](doc/zh-CN/cli.md) | 中文精编 |
+| 部署概览 | [`doc/zh-CN/deploy/deployment-overview.md`](doc/zh-CN/deploy/deployment-overview.md) | 中文精编 |
+| Docker | [`doc/zh-CN/deploy/docker.md`](doc/zh-CN/deploy/docker.md) | 中文精编 |
+| Standalone | [`doc/zh-CN/deploy/standalone.md`](doc/zh-CN/deploy/standalone.md) | 中文精编 |
+| 模型重训练 | [`doc/zh-CN/howto/model-retraining.md`](doc/zh-CN/howto/model-retraining.md) | 中文精编 |
+| 生产运行建议 | [`doc/zh-CN/dev/production-recommendations.md`](doc/zh-CN/dev/production-recommendations.md) | 中文精编 |
+
+## 保留英文的低频页面
+
+`zh-v0.1.0` 定位为核心功能中文版，不宣称 55 篇文档全部完成。Kubernetes、Snowplow、自定义日志、Prometheus 专页、源码构建、性能报告、部分搜索/推荐教程和 Changelog 继续保留英文原文。
+
+完整范围与发布边界见 [`RELEASE_NOTES.zh-CN.md`](RELEASE_NOTES.zh-CN.md)。
 
 ## 发现问题
 

@@ -9,9 +9,17 @@
 ## 核心参考
 
 - [事件格式](event-schema.md)
+- [时间戳格式](timestamp-formats.md)
 - [JSON API](api.md)
+- [CLI](cli.md)
+- [点击模型](click-models.md)
 - [配置概览](configuration/overview.md)
+  - [数据源](configuration/data-sources.md)
+  - [状态持久化](configuration/persistence.md)
   - [特征提取器](configuration/feature-extractors.md)
+    - [标量、向量与类别](configuration/features/scalar.md)
+    - [通用派生特征](configuration/features/generic.md)
+    - [日期与时间](configuration/features/datetime.md)
     - [计数、窗口与比率](configuration/features/counters.md)
     - [文本与神经匹配](configuration/features/text.md)
     - [上游相关性与位置](configuration/features/relevancy.md)
@@ -22,6 +30,14 @@
     - [热门趋势推荐](configuration/recommendations/trending.md)
     - [ALS 相似内容](configuration/recommendations/similar.md)
     - [语义相似推荐](configuration/recommendations/semantic.md)
+
+## 运行与部署
+
+- [部署概览](deploy/deployment-overview.md)
+  - [Docker](deploy/docker.md)
+  - [Standalone](deploy/standalone.md)
+- [模型重训练](howto/model-retraining.md)
+- [生产运行建议](dev/production-recommendations.md)
 
 ## 中文补充
 

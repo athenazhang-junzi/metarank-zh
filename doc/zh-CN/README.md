@@ -42,6 +42,19 @@
 - [ALS 相似内容](configuration/recommendations/similar.md)
 - [语义相似推荐](configuration/recommendations/semantic.md)
 
+### 运行与部署
+
+- [CLI](cli.md)
+- [数据源](configuration/data-sources.md)
+- [状态持久化](configuration/persistence.md)
+- [点击模型](click-models.md)
+- [时间戳格式](timestamp-formats.md)
+- [部署概览](deploy/deployment-overview.md)
+- [Docker](deploy/docker.md)
+- [Standalone](deploy/standalone.md)
+- [模型重训练](howto/model-retraining.md)
+- [生产运行建议](dev/production-recommendations.md)
+
 ### 中文案例
 
 - [Metarank × FlowLens：视频内容分发案例](cases/video-distribution-flowlens.md)

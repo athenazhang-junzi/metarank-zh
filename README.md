@@ -1,215 +1,93 @@
 <h1 align="center">
-    <a style="text-decoration: none" href="https://www.metarank.ai">
-      <img width="120" src="https://raw.githubusercontent.com/metarank/metarank/master/doc/img/logo.svg" />
-      <p align="center">Metarank: real time personalization as a service</p>
-    </a>
+  <a href="https://www.metarank.ai">
+    <img width="120" src="https://raw.githubusercontent.com/metarank/metarank/master/doc/img/logo.svg" alt="Metarank logo" />
+  </a>
+  <p>Metarank 中文版</p>
 </h1>
-<h2 align="center">
-  <a href="https://docs.metarank.ai">Docs</a> | <a href="https://metarank.ai">Website</a> | <a href="https://metarank.ai/slack">Community Slack</a> | <a href="https://blog.metarank.ai">Blog</a> | <a href="https://demo.metarank.ai">Demo</a>
-</h2>
 
-[![CI Status](https://github.com/metarank/metarank/workflows/Tests/badge.svg)](https://github.com/metarank/metarank/actions)
-[![License: Apache 2](https://img.shields.io/badge/License-Apache2-green.svg)](https://opensource.org/licenses/Apache-2.0)
-![Last commit](https://img.shields.io/github/last-commit/metarank/metarank)
-![Last release](https://img.shields.io/github/release/metarank/metarank)
-[![Join our slack](https://img.shields.io/badge/Slack-join%20the%20community-blue?logo=slack&style=social)](https://metarank.ai/slack)
+<p align="center">非官方简体中文翻译与学习指南</p>
 
+<p align="center">
+  <a href="https://github.com/metarank/metarank">官方仓库</a> ·
+  <a href="https://docs.metarank.ai">官方文档</a> ·
+  <a href="doc/zh-CN/README.md">中文文档</a> ·
+  <a href="TRANSLATION_STATUS.md">翻译进度</a> ·
+  <a href="doc/zh-CN/glossary.md">术语表</a>
+</p>
 
-# What is Metarank?
+> [!IMPORTANT]
+> 本仓库是 [metarank/metarank](https://github.com/metarank/metarank) 的非官方中文翻译。Metarank 的核心代码、品牌与原始文档归上游项目及其贡献者所有。本仓库不代表 Metarank 官方，也不应被理解为译者原创了 Metarank 的核心能力。
 
-[Metarank](https://metarank.ai) is an open-source ranking service. It can help you to build a personalized semantic/neural search and recommendations.
+## Metarank 是什么？
 
-If you just want to get started, try:
-* the [quickstart](https://docs.metarank.ai/introduction/quickstart) tutorial of implementing Learning-to-Rank on top of your search engine.
-* a [semantic search guide](TODO) of building an LLM-based neural search.
-* a [collaborative filtering recommendations guide](TODO) to create a "you may also like" widget as seen on many e-commerce stores.
+[Metarank](https://metarank.ai) 是一个开源排序服务，用于在既有搜索或推荐候选集之上完成个性化重排。它可以接收内容候选、用户和上下文信息，计算排序特征，通过学习排序模型返回新的顺序，并接收点击、购买等反馈事件。
 
-## Why Metarank?
+它适合构建：
 
-With Metarank, you can make your existing search and recommendations **smarter**:
-* Integrate customer signals like clicks and purchases into the ranking - and optimize for maximal CTR!
-* Track [visitor profile](https://docs.metarank.ai/reference/overview/feature-extractors/user-session) and make search results adapt to user actions with real-time personalization.
-* Use [LLMs in bi- and cross-encoder mode](https://docs.metarank.ai/reference/overview/feature-extractors/text) to make your search understand the true meaning of search queries.
+- 个性化搜索与学习排序（Learning-to-Rank，LTR）；
+- 热门内容、相似内容和协同过滤推荐；
+- 基于用户行为的实时个性化；
+- 语义搜索与神经重排；
+- 多个排序模型的并行服务。
 
-Metarank is **fast**:
-* optimized for reranking latency, it can handle even large result sets within 10-20ms. See [benchmarks](https://docs.metarank.ai/introduction/performance).
-* as a stateless cloud-native service (with state managed by Redis), it can scale horizontally and process thousands of RPS. See [Kubernetes deployment guide](https://docs.metarank.ai/reference/deployment-overview/kubernetes) for details.
+Metarank 主要负责**候选集之后的排序与反馈闭环**。它不是一套包含内容召回、流量分配、显著性检验和实验决策在内的完整推荐平台。
 
-Save your **development time**:
-* Metarank can compute dozens of typical ranking signals out of the box: CTR, referer, User-Agent, time, etc - you don't need to write custom ad-hoc code for most common ranking factors. See [the full list of supported ranking signals](https://docs.metarank.ai/reference/overview/feature-extractors) in our docs.
-* There are integrations with many possible streaming processing systems to ingest visitor signals: See [data sources](https://docs.metarank.ai/reference/overview/data-sources) for details.
+## 中文文档从哪里开始？
 
-## What can you build with Metarank?
+| 目标 | 建议入口 |
+|---|---|
+| 先理解项目定位 | [Metarank 简介](doc/zh-CN/intro.md) |
+| 在本机跑通示例 | [快速开始](doc/zh-CN/quickstart/quickstart.md) |
+| 选择 Docker 或 JAR | [安装与环境准备](doc/zh-CN/installation.md) |
+| 统一推荐系统术语 | [中英术语表](doc/zh-CN/glossary.md) |
+| 了解视频内容分发应用 | [Metarank × FlowLens 案例](doc/zh-CN/cases/video-distribution-flowlens.md) |
+| 查看翻译覆盖范围 | [翻译进度](TRANSLATION_STATUS.md) |
 
-Metarank helps you build advanced ranking systems for search and recommendations:
-* Semantic search: use state-of-the-art LLMs to make your Elasticsearch/OpenSearch understand the meaning of your queries
-* Recommendations: traditional collaborative-filtering and new-age semantic content recommendations.
-* Learning-to-Rank: optimize your existing search
+完整英文文档仍保留在 [`doc/`](doc/) 目录中。中文文档位于 [`doc/zh-CN/`](doc/zh-CN/)，文件路径尽量与上游对应，方便比较和同步。
 
-## Content
+## 一分钟运行
 
-Blog posts:
-* [Learn-to-Rank with OpenSearch and Metarank](https://opensearch.org/blog/ltr-with-opensearch-and-metarank/)
-* [Hybrid Search and Learning-to-Rank with Metarank](https://www.pinecone.io/learn/metarank/)
-* [Solving a search cold-start problem with aggregated CTR](https://blog.metarank.ai/solving-a-search-cold-start-problem-with-aggregated-ctr-b88c14f4d03c)
-* [Personalized search with Metarank and Elasticsearch](https://blog.metarank.ai/personalized-search-with-metarank-and-elasticsearch-a5a098548da7)
-
-Meetups and conference talks:
-* [Building an open-source online Learn-to-rank engine](https://www.youtube.com/watch?v=lbbp4CFWZGk), Haystack EU 23, [slides](https://metarank.github.io/haystack-eu22/#/)
-* [Overcoming position and presentation biases in search and recommender systems](https://www.youtube.com/watch?v=PqbYdDiwKBY), Data Natives Meetup Berlin, [slides](https://metarank.github.io/bias-talk/#/)
-* [Learning-to-rank: Deep, fast, precise - choose any two](https://www.youtube.com/watch?v=oXfFqAKf4Ac), DataTalks meetup, [slides](https://metarank.github.io/datatalks-ltr-talk/#/)
-
-## Main features
-
-* Semantic neural search: [TODO]
-* Recommendations: [trending](doc/configuration/recommendations/trending.md) and [similar-items](configuration/recommendations/similar.md) (MF ALS).
-* Personalization: [secondary reranking](doc/quickstart/quickstart.md) (LambdaMART)
-* AutoML: [automatic feature generation](doc/howto/autofeature.md) and [model re-training](howto/model-retraining.md)
-* A/B testing: [multiple model serving](doc/configuration/overview.md#models)
-
-## Demo
-
-You can play with Metarank demo on [demo.metarank.ai](https://demo.metarank.ai):
-
-![Demo](doc/img/demo.gif)
-
-The demo itself and [the data used](https://github.com/metarank/msrd) are open-source and you can grab a copy of training events and config file [in the github repo](https://github.com/metarank/metarank/tree/master/src/test/resources/ranklens).
-
-## Metarank in One Minute
-
-Let us show how you can start personalizing content with LambdaMART-based reranking in just under a minute:
-
-1. Prepare the data: we will get the dataset and config file from the [demo.metarank.ai](https://demo.metarank.ai)
-2. Start Metarank in a standalone mode: it will import the data, train the ML model and start the API.
-3. Send a couple of requests to the API.
-
-### Step 1: Prepare data
-
-We will use the [ranklens dataset](https://github.com/metarank/ranklens), which is used in our [Demo](https://demo.metarank.ai), so just download the data file
+以下示例使用官方 RankLens 数据和内存存储，在本机完成数据导入、模型训练和 API 启动。
 
 ```bash
 curl -O -L https://github.com/metarank/metarank/raw/master/src/test/resources/ranklens/events/events.jsonl.gz
-```
-
-### Step 2: Prepare configuration file
-
-We will again use the configuration file from our [Demo](https://demo.metarank.ai). It utilizes in-memory store, so no other dependencies are needed.
-
-
-```bash
 curl -O -L https://raw.githubusercontent.com/metarank/metarank/master/src/test/resources/ranklens/config.yml
+
+docker run -i -t -p 8080:8080 \
+  -v "$(pwd)":/opt/metarank \
+  metarank/metarank:0.8.0 standalone \
+  --config /opt/metarank/config.yml \
+  --data /opt/metarank/events.jsonl.gz
 ```
 
-### Step 3: Start Metarank!
+启动完成后，可向 `http://localhost:8080/rank/xgboost` 发送候选内容列表。完整步骤、请求示例和反馈闭环见[中文快速开始](doc/zh-CN/quickstart/quickstart.md)。
 
-With the final step we will use Metarank’s `standalone` mode that combines training and running the API into one command:
+> 中文文档固定使用明确版本号，避免 `latest` 指向预发布版本。具体稳定版本应以官方发布页和上游安装文档为准。
 
-```bash
-docker run -i -t -p 8080:8080 -v $(pwd):/opt/metarank metarank/metarank:latest standalone --config /opt/metarank/config.yml --data /opt/metarank/events.jsonl.gz
-```
+## 中文版维护原则
 
-You will see some useful output while Metarank is starting and grinding through the data. Once this is done, you can send requests to `localhost:8080` to get personalized results.
+- 不翻译 API 路径、字段名、配置键、命令、类名和代码标识符；
+- 首次出现的重要术语采用“中文（English）”形式；
+- 代码块尽量与上游保持一致，只翻译说明和注释；
+- 对上游原文之外的解释明确标注为“译者说明”或“案例”；
+- 不修改 Metarank 的核心算法和运行逻辑；
+- 每次同步上游后更新翻译状态与对应提交。
 
-Here we will interact with several movies by clicking on one of them and observing the results. 
+## 与 FlowLens 的关系
 
-> First, let's see the initial output provided by Metarank without before we interact with it
+本仓库包含一篇独立案例，用于解释 Metarank 与 [FlowLens](https://github.com/athenazhang-junzi/FlowLens) 在内容分发链路中的互补关系：
 
-```bash
-# get initial ranking for some items
-curl http://localhost:8080/rank/xgboost \
-    -d '{
-    "event": "ranking",
-    "id": "id1",
-    "items": [
-        {"id":"72998"}, {"id":"67197"}, {"id":"77561"},
-        {"id":"68358"}, {"id":"79132"}, {"id":"103228"}, 
-        {"id":"72378"}, {"id":"85131"}, {"id":"94864"}, 
-        {"id":"68791"}, {"id":"93363"}, {"id":"112623"}
-    ],
-    "user": "alice",
-    "session": "alice1",
-    "timestamp": 1661431886711
-}'
+- Metarank：特征计算、模型打分、在线重排和反馈采集；
+- FlowLens：数据质量、策略诊断、多目标评估和决策边界；
+- FlowLens LiveLab：实验健康检查和决策过程演示。
 
-# {"item":"72998","score":0.9602446652021992},{"item":"79132","score":0.7819134441404151},{"item":"68358","score":0.33377910321385645},{"item":"112623","score":0.32591281190727805},{"item":"103228","score":0.31640256043322723},{"item":"77561","score":0.3040782705414116},{"item":"94864","score":0.17659007036183608},{"item":"72378","score":0.06164568676567339},{"item":"93363","score":0.058120639770243385},{"item":"68791","score":0.026919880032451306},{"item":"85131","score":-0.35794106000271037},{"item":"67197","score":-0.48735167237049154}
-```
+目前这些项目**没有完成代码级线上集成**。案例只用于说明系统边界和产品方法，不代表真实平台接入、线上 A/B 测试或业务收益。
 
-```bash
-# tell Metarank which items were presented to the user and in which order from the previous request
-# optionally, we can include the score calculated by Metarank or your internal retrieval system
-curl http://localhost:8080/feedback \
- -d '{
-  "event": "ranking",
-  "fields": [],
-  "id": "test-ranking",
-  "items": [
-    {"id":"72998","score":0.9602446652021992},{"id":"79132","score":0.7819134441404151},{"id":"68358","score":0.33377910321385645},
-    {"id":"112623","score":0.32591281190727805},{"id":"103228","score":0.31640256043322723},{"id":"77561","score":0.3040782705414116},
-    {"id":"94864","score":0.17659007036183608},{"id":"72378","score":0.06164568676567339},{"id":"93363","score":0.058120639770243385},
-    {"id":"68791","score":0.026919880032451306},{"id":"85131","score":-0.35794106000271037},{"id":"67197","score":-0.48735167237049154}
-  ],
-  "user": "test2",
-  "session": "test2",
-  "timestamp": 1661431888711
-}'
-```
+## 上游与许可
 
-> Now, let's interact with the items `93363`
+- 上游仓库：[metarank/metarank](https://github.com/metarank/metarank)
+- 中文镜像：[athenazhang-junzi/metarank-zh](https://github.com/athenazhang-junzi/metarank-zh)
+- 许可协议：[Apache License 2.0](LICENSE)
+- 翻译协作：[CONTRIBUTING.zh-CN.md](CONTRIBUTING.zh-CN.md)
 
-```bash
-# click on the item with id 93363
-curl http://localhost:8080/feedback \
- -d '{
-  "event": "interaction",
-  "type": "click",
-  "fields": [],
-  "id": "test-interaction",
-  "ranking": "test-ranking",
-  "item": "93363",
-  "user": "test",
-  "session": "test",
-  "timestamp": 1661431890711
-}'
-```
-
-> Now, Metarank will personalize the items, the order of the items in the response will be different
-
-```bash
-# personalize the same list of items
-# they will be returned in a different order by Metarank
-curl http://localhost:8080/rank/xgboost \
- -d '{
-  "event": "ranking",
-  "fields": [],
-  "id": "test-personalized",
-  "items": [
-    {"id":"72998"}, {"id":"67197"}, {"id":"77561"},
-    {"id":"68358"}, {"id":"79132"}, {"id":"103228"}, 
-    {"id":"72378"}, {"id":"85131"}, {"id":"94864"}, 
-    {"id":"68791"}, {"id":"93363"}, {"id":"112623"}
-  ],
-  "user": "test",
-  "session": "test",
-  "timestamp": 1661431892711
-}'
-
-# {"items":[{"item":"93363","score":2.2013986484185124},{"item":"72998","score":1.1542776301073876},{"item":"68358","score":0.9828904282341605},{"item":"112623","score":0.9521647429731446},{"item":"79132","score":0.9258841742518286},{"item":"77561","score":0.8990921381835769},{"item":"103228","score":0.8990921381835769},{"item":"94864","score":0.7131600718467729},{"item":"68791","score":0.624462038351694},{"item":"72378","score":0.5269765094008626},{"item":"85131","score":0.29198666089255343},{"item":"67197","score":0.16412780810560743}]}
-```
-
-## Useful Links
-
-* [Documentation](https://docs.metarank.ai)
-* [Ranklens Dataset](https://github.com/metarank/ranklens)
-* [Contribution guide](CONTRIBUTING.md)
-* [License](LICENSE)
-
-## What's next? 
-
-Check out a more in-depth [Quickstart](/doc/quickstart/quickstart.md) full [Reference](/doc/installation.md). 
-
-If you have any questions, don't hesitate to join our [Slack](https://communityinviter.com/apps/metarank/metarank)!
-
-
-License
-=====
-This project is released under the Apache 2.0 license, as specified in the [License](LICENSE) file.
+本仓库保留上游 `LICENSE`。重新分发或继续修改时，请继续遵守 Apache License 2.0，并保留适用的版权、许可和归属信息。

@@ -6,6 +6,14 @@
 - [安装与环境准备](installation.md)
 - [快速开始](quickstart/quickstart.md)
 
+## 核心参考
+
+- [事件格式](event-schema.md)
+- [JSON API](api.md)
+- [配置概览](configuration/overview.md)
+  - [特征提取器](configuration/feature-extractors.md)
+  - [支持的排序模型](configuration/supported-ranking-models.md)
+
 ## 中文补充
 
 - [中英术语表](glossary.md)

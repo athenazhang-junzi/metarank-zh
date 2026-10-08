@@ -9,7 +9,12 @@
 1. [Metarank 是什么？](intro.md)
 2. [安装与环境准备](installation.md)
 3. [快速开始](quickstart/quickstart.md)
-4. [中英术语表](glossary.md)
+4. [事件格式](event-schema.md)
+5. [JSON API](api.md)
+6. [配置概览](configuration/overview.md)
+7. [特征提取器](configuration/feature-extractors.md)
+8. [支持的排序模型](configuration/supported-ranking-models.md)
+9. [中英术语表](glossary.md)
 
 ### 理解完整排序闭环
 
@@ -19,7 +24,7 @@
 候选内容 → /rank 重排 → 展示排序结果 → /feedback 回传 → 生成训练样本 → 重新训练模型
 ```
 
-事件格式、API、配置和模型文档将在后续阶段逐步翻译。翻译完成前，请阅读对应[英文原文](../_toc.md)。
+中文核心参考已经覆盖事件、API、配置、特征和排序模型。各特征类型、部署与集成页面仍在后续阶段，未翻译部分请阅读对应[英文原文](../_toc.md)。
 
 ### 中文案例
 

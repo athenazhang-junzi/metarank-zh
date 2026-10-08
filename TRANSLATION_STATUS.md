@@ -32,15 +32,15 @@
 | 中英术语表 | [`doc/zh-CN/glossary.md`](doc/zh-CN/glossary.md) | 中文原创 |
 | 上游同步说明 | [`doc/zh-CN/upstream-sync.md`](doc/zh-CN/upstream-sync.md) | 中文原创 |
 | 视频内容分发案例 | [`doc/zh-CN/cases/video-distribution-flowlens.md`](doc/zh-CN/cases/video-distribution-flowlens.md) | 中文原创 |
-| 事件格式 | `doc/zh-CN/event-schema.md` | 待翻译 |
-| API | `doc/zh-CN/api.md` | 待翻译 |
-| 配置概览 | `doc/zh-CN/configuration/overview.md` | 待翻译 |
-| 特征提取器 | `doc/zh-CN/configuration/feature-extractors.md` | 待翻译 |
-| 排序模型 | `doc/zh-CN/configuration/supported-ranking-models.md` | 待翻译 |
+| 事件格式 | [`doc/zh-CN/event-schema.md`](doc/zh-CN/event-schema.md) | 中文精编 |
+| API | [`doc/zh-CN/api.md`](doc/zh-CN/api.md) | 中文精编 |
+| 配置概览 | [`doc/zh-CN/configuration/overview.md`](doc/zh-CN/configuration/overview.md) | 中文精编 |
+| 特征提取器 | [`doc/zh-CN/configuration/feature-extractors.md`](doc/zh-CN/configuration/feature-extractors.md) | 中文精编 |
+| 排序模型 | [`doc/zh-CN/configuration/supported-ranking-models.md`](doc/zh-CN/configuration/supported-ranking-models.md) | 中文精编 |
 
 ## 后续阶段
 
-后续依次覆盖特征、推荐模型、数据源、持久化、部署、集成、生产运行和开发文档。未翻译页面可直接阅读 [`doc/`](doc/) 下的英文原文。
+后续依次覆盖各类特征的详细参数、推荐模型、数据源、持久化、部署、集成、生产运行和开发文档。未翻译页面可直接阅读 [`doc/`](doc/) 下的英文原文。
 
 ## 发现问题
 

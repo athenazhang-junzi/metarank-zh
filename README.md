@@ -39,11 +39,14 @@ Metarank 主要负责**候选集之后的排序与反馈闭环**。它不是一�
 | 先理解项目定位 | [Metarank 简介](doc/zh-CN/intro.md) |
 | 在本机跑通示例 | [快速开始](doc/zh-CN/quickstart/quickstart.md) |
 | 选择 Docker 或 JAR | [安装与环境准备](doc/zh-CN/installation.md) |
+| 设计反馈数据 | [事件格式](doc/zh-CN/event-schema.md) |
+| 接入排序服务 | [JSON API](doc/zh-CN/api.md) |
+| 配置特征和模型 | [配置概览](doc/zh-CN/configuration/overview.md) |
 | 统一推荐系统术语 | [中英术语表](doc/zh-CN/glossary.md) |
 | 了解视频内容分发应用 | [Metarank × FlowLens 案例](doc/zh-CN/cases/video-distribution-flowlens.md) |
 | 查看翻译覆盖范围 | [翻译进度](TRANSLATION_STATUS.md) |
 
-完整英文文档仍保留在 [`doc/`](doc/) 目录中。中文文档位于 [`doc/zh-CN/`](doc/zh-CN/)，文件路径尽量与上游对应，方便比较和同步。
+完整英文文档仍保留在 [`doc/`](doc/) 目录中。中文文档位于 [`doc/zh-CN/`](doc/zh-CN/)，文件路径尽量与上游对应，方便比较和同步。当前中文核心参考已经覆盖事件、API、配置、特征和排序模型。
 
 ## 一分钟运行
 
